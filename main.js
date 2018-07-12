@@ -1,4 +1,4 @@
-
+﻿
 //controla poprawnosci wprowadzonych danych
 
 var pole = document.getElementById("money");
@@ -24,7 +24,7 @@ function calculate() {
 
 // pobranie danych od NBP i ich przeliczenie oraz wyswietlenie
 
-fetch('http://api.nbp.pl/api/exchangerates/tables/a/last/1?format=json')
+fetch('https://api.nbp.pl/api/exchangerates/tables/a/last/1?format=json')
     .then(resp => resp.json())
     .then(resp => {
         console.log(resp);
